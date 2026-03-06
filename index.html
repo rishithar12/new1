@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>RouteMaster Picker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>📦 RouteMaster Order Picker</h1>
+
+<div class="container">
+
+<textarea id="jsonInput">
+{
+"grid":[
+[0,0,1],
+[1,0,1],
+[0,2,0]
+],
+"start":[0,0],
+"targets":[[2,1]]
+}
+</textarea>
+
+<button onclick="run()">Find Shortest Path</button>
+
+<div id="grid"></div>
+
+<div class="result">
+<p id="steps"></p>
+<p id="time"></p>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
